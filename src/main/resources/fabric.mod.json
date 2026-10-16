@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "noexplosionmod",
+	"version": "${version}",
+	"name": "NoExplosionMod",
+	"description": "让苦力怕再次伟大",
+	"authors": [
+		"素源"
+	],
+	"contact": {
+		"homepage": "https://github.com/suyuan-233/noexplosionmod",
+		"sources": "https://github.com/suyuan-233/noexplosionmod",
+		"issues": "https://github.com/suyuan-233/noexplosionmod/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/noexplosionmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.suyuan.noexplosion.NoExplosionMod"
+		],
+		"fabric-datagen": [
+			"com.suyuan.noexplosion.NoExplosionModDataGenerator"
+		]
+	},
+	"mixins": [
+		"noexplosionmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
